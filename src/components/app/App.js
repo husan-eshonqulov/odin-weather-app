@@ -1,13 +1,16 @@
-import CreateElement from '../element/Element';
-import CreateTitle from '../title/Title';
+import createElement from '../element/Element';
+import createSearch from '../search/Search';
+import createTitle from '../title/Title';
 
-function CreateApp() {
-  const app = CreateElement('div');
-  const title = CreateTitle('Weather Map', 'h1', '#28a745');
+function createApp() {
+  const app = createElement('div');
+  const title = createTitle('Weather Map', 'h1', '#28a745');
+  const search = createSearch();
 
   app.appendChild(title);
+  app.appendChild(search);
 
   return app;
 }
 
-export default CreateApp;
+export default createApp;

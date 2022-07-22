@@ -1,8 +1,8 @@
 import './Title.css';
-import CreateElement from '../element/Element';
+import createElement from '../element/Element';
 
-function CreateTitle(text, size, color) {
-  const title = CreateElement(size);
+function createTitle(text, size, color) {
+  const title = createElement(size);
   title.textContent = text;
   title.style.color = color;
   title.classList.add('title');
@@ -10,4 +10,4 @@ function CreateTitle(text, size, color) {
   return title;
 }
 
-export default CreateTitle;
+export default createTitle;
